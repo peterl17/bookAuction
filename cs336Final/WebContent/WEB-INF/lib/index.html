@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>                                  <!-- TAB TITLE -->
+        <meta charset="utf-8">              <!-- FORMAT OF PAGE -->
+        <title>Le Restaurant | The Best Restaurant In The Galaxy</title>
+        <link rel="stylesheet" href="css/normalize.css">    <!-- LINKED DOCUMENT IS A STYLESHEET THAT DIGS INTO CSS FILE -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Zilla+Slab:400,500" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0"> <!-- MOBILE LAYOUT FOR MOBILE DEVICES -->
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font: 400 15px/1.8 "Lato", sans-serif;
+          color: #777;
+        }
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          position: relative;
+          opacity: 0.65;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .bgimg-1 {
+          background-image: url("img/Restaurant1.jpg");
+          min-height: 100%;
+            z-index: -1;
+        }
+        .bgimg-2 {
+          background-image: url("img/Restaurant2.jpg");
+          min-height: 400px;
+        }
+        .bgimg-3 {
+          background-image: url("img/Restaurant3.jpg");
+          min-height: 400px;
+        }
+        .caption {
+          display:inline;
+          position: inherit;
+          transform:translateX(-20%);
+          top: 30%;
+          width: 100%;
+          text-align: center;
+          color: #000000;
+        }
+        .caption span.border {
+          position: fixed;
+          left: 0;
+          top: 30px;
+          background-color: rgba(17, 17, 17, 0.6);
+          color: #fff;
+          padding: 80px 10px;
+        }
+
+        .hours {
+          color: orange;
+          font-size: 14px;
+          left: 20%;
+        }
+
+        .sidebar{
+          color: white;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 27;
+          font-weight: 800;
+        }
+
+        h3 {
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          font: 20px "Lato", sans-serif;
+          color: #fff;
+        }
+
+        .info{
+          float:right;
+          width: 20%;
+          height: 100%;
+          background-color: rgba(17, 17, 17, 0.9);
+          text-align: center;
+          color: #fff;
+          transform:translateX(0%) translateY(-300px);
+        }
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="Index.html" id="logo">        <!-- ANCHOR TO GO BACK TO HOME PAGE -->
+                <h1>Le Restaurant</h1>                    <!-- HEADLINE -->
+                <h2>The Best Restaurant In The Galaxy</h2>
+            </a>
+            <nav>
+                <ul>                        <!-- UNORDERED LIST -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Introduction.html">Introduction</a></li>
+                    <li><a href="Games.html">Reservations</a></li>
+                    <li><a href="contact.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="bgimg-1">
+<div style ="padding: 200px 100%"></div>
+
+          <div class="caption">
+            <span class="border">
+
+
+            <p style = "color: #fff;
+                      font-size: 25px;
+                      letter-spacing: 10px;">
+                Restaurant Hours:
+            </p>
+
+            <p class = "hours">
+              Monday: 9AM - 11PM  <br />
+              Tuesday: 9AM - 11PM  <br />
+              Wednesday: 9AM - 11PM  <br />
+              Thursday: 9AM - 11PM  <br />
+              Friday: 9AM - 3AM  <br />
+              Saturday: 9AM - 3AM  <br />
+              Sunday: 10AM - 9PM <br/>
+            </p>
+              </span>
+          </div>
+
+          <div style = "position: relative">
+            <span class = "info">
+      <p class = "sidebar">Information
+        <p class = "hours"> Phone: </br>862-223-0979 </br></br></br>
+          This is our head chef, Peter
+          <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L7viWjR53RFqAXi8-fc4byfeeDQ6NuhvtXGdC9wBKVFKGD4r"></img>
+        </p>
+
+      </p>
+            </span>
+          </div>
+        </div>
+
+        <div id="wrapper">
+            <footer>                            <!-- COMPLEMENT TO HEADER SOCIAL MEDIA ETC. -->
+                <a href="https://www.twitter.com/KevinDai4"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+                <a href="https://www.facebook.com/kevin.p.dai"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+
+                <p>&copy; 2017 Kevin Dai.</p>   <!-- COPYRIGHT -->
+            </footer>
+        </div>
+    </body>
+</html>
